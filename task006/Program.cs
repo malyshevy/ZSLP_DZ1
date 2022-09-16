@@ -3,19 +3,18 @@ Console.Clear();
 Console.WriteLine("Проверка числа на чётность");
 Console.Write("Введите число ");
 int num=int.Parse(Console.ReadLine());
-int num2=Math.Abs(num);
 if (num==0)
 {
     Console.WriteLine($"Это число {num} ! Введите другое число");
     return;
 }
-else if ((num2%2)==1)
+else if ((num%2)==0)
 {
-    Console.WriteLine($"Число {num} не является чётным");
+    Console.WriteLine($"Число {num} является чётным");
     return;
 }
 else
 {
-    Console.WriteLine($"Число {num} является чётным");
+    Console.WriteLine($"Число {num} не является чётным");
 }
 return;
